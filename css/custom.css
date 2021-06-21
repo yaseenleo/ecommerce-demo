@@ -1,0 +1,45 @@
+/* your styles go here */
+.megamenu-li {
+    position: static;
+ }
+ 
+ .megamenu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 15px;
+ }
+ .megamenu h6{
+    margin-left: 21px;
+ }
+ .megamenu i{
+    width: 20px;
+ }
+ .dropdown:hover .dropdown-menu{
+    display: block;
+}
+ 
+.banner .carousel-item img{
+   width: 100%;
+   height: 600px;
+   object-fit: cover;
+}
+.navbar .logo{
+   width: 50px;
+   height: auto;
+}
+.footer-logo{
+   margin-top: -1em;
+}
+.footer-logo span{
+   font-weight: 600;
+   letter-spacing: 1px;
+}
+.footer-logo .logo{
+   width: 50px;
+   height: auto;
+}
+.social-link li{
+   list-style: none;
+}
