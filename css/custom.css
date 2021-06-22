@@ -43,3 +43,18 @@
 .social-link li{
    list-style: none;
 }
+.item-one, .item-four{
+   height: 490px
+}
+.item-two, .item-three{
+   height: 233px
+}
+.category-item img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.product img {
+   height: 230px;
+   object-fit: cover;
+}
