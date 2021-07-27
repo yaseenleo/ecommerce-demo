@@ -1,18 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="../css/style.default.css">
+    <link rel="stylesheet" href="../css/util.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/custom.css">
 </head>
+
 <body>
-    <div class="container-fluid login-screen-sec">
-        <div class="container">
-            <div class="login-box">
-            
+
+    <header class="header">
+        <div class="container px-0 px-lg-3">
+          <nav class="navbar navbar-expand-lg navbar-light py-3 px-lg-0">
+            <a class="navbar-brand" href="../index.html">
+              <img class="img-fluid" src="../img/icon/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <!-- Link--><a class="nav-link active" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown megamenu-li dmenu">
+                  <a class="nav-link dropdown-toggle" href="./pages/shop.html" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">Men</a>
+                  <div class="dropdown-menu megamenu sm-menu border-top" aria-labelledby="dropdown01">
+                    <div class="row">
+                      <div class="col-sm-6 col-lg-4 border-right mb-4">
+                        <h6>SHOES</h6>
+                        <a class="dropdown-item" href="#">RUNNING</a>
+                        <a class="dropdown-item" href="#">BASKETBALL</a>
+                        <a class="dropdown-item" href="#">TRAINING</a>
+                        <a class="dropdown-item" href="#">TENNIS & INDOOR COURT</a>
+                        <a class="dropdown-item" href="#">LIFESTYLE</a>
+                        <a class="dropdown-item" href="#">FOOTBALL & SOCCER</a>
+                        <a class="dropdown-item" href="#">GOLF</a>
+                        <a class="dropdown-item" href="#">SANDALS & SLIDES & THONGS</a>
+                        <a class="dropdown-item" href="#">CRICKET</a>
+                        <a class="dropdown-item" href="#">TENNIS</a>
+                      </div>
+                      <div class="col-sm-6 col-lg-4 border-right mb-4">
+                        <h6>CLOTHING</h6>
+                        <a class="dropdown-item" href="#">TOPS & T-SHIRTS</a>
+                        <a class="dropdown-item" href="#">TRACK SUITS</a>
+                        <a class="dropdown-item" href="#">SHORTS</a>
+                        <a class="dropdown-item" href="#">COMPRESSION</a>
+                        <a class="dropdown-item" href="#">POLOS</a>
+                        <a class="dropdown-item" href="#">HOODIES & SWEATSHIRTS</a>
+                        <a class="dropdown-item" href="#">JERSEYS</a>
+                        <a class="dropdown-item" href="#">JACKETS & VESTS</a>
+                        <a class="dropdown-item" href="#">SOCKS</a>
+                        <a class="dropdown-item" href="#">LONG SLEVEES TOPS</a>
+                        <a class="dropdown-item" href="#">PANTS & TIGHTS</a>
+                      </div>
+                      <div class="col-sm-6 col-lg-4 border-right mb-4">
+                        <h6>ACCESSORIES & EQUIPMENT</h6>
+                        <a class="dropdown-item" href="#">CAPS & BEANIES</a>
+                        <a class="dropdown-item" href="#">BACKPACKS</a>
+                        <a class="dropdown-item" href="#">FITNESS GEAR</a>
+                        <a class="dropdown-item" href="#">FOOTBALLS</a>
+                        <a class="dropdown-item" href="#">TRAINING GLOVES</a>
+                        <a class="dropdown-item" href="#">WATER BOTTLES</a>
+                        <a class="dropdown-item" href="#">WRISTBANDS & HEADBANDS</a>
+                        <a class="dropdown-item" href="#">DUFFELS & OTHER BAGS</a>
+                        <a class="dropdown-item" href="#">BASKETBALL</a>
+                      </div>
+  
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown megamenu-li dmenu">
+                  <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">Womens</a>
+                  <div class="dropdown-menu megamenu sm-menu border-top" aria-labelledby="dropdown01">
+                    <div class="row">
+                      <div class="col-sm-6 col-lg-4 border-right mb-4">
+                        <h6>SHOES</h6>
+                        <a class="dropdown-item" href="#">LIFESTYLE</a>
+                        <a class="dropdown-item" href="#">BASKETBALL</a>
+                        <a class="dropdown-item" href="#">RUNNING</a>
+                        <a class="dropdown-item" href="#">TRAINING</a>
+                        <a class="dropdown-item" href="#">TENNIS & INDOOR COURT</a>
+                        <a class="dropdown-item" href="#">FOOTBALL & SOCCER</a>
+                        <a class="dropdown-item" href="#">GOLF</a>
+                        <a class="dropdown-item" href="#">SANDALS & SLIDES & THONGS</a>
+                      </div>
+                      <div class="col-sm-6 col-lg-4 border-right mb-4">
+                        <h6>CLOTHING</h6>
+                        <a class="dropdown-item" href="#">TOP & T-SHIRTS</a>
+                        <a class="dropdown-item" href="#">JACKETS & VESTS</a>
+                        <a class="dropdown-item" href="#">LEGGINGS & TIGHTS</a>
+                        <a class="dropdown-item" href="#">SPORTS BRAS</a>
+                        <a class="dropdown-item" href="#">SHORTS</a>
+                        <a class="dropdown-item" href="#">COMPRESSION</a>
+                        <a class="dropdown-item" href="#">PANTS</a>
+                        <a class="dropdown-item" href="#">HOODIES & SWEATSHIRTS</a>
+                        <a class="dropdown-item" href="#">SOCKS</a>
+                        <a class="dropdown-item" href="#">TRACK SUITS</a>
+                        <a class="dropdown-item" href="#">LONG SLEVEES TOPS</a>
+                      </div>
+                      <div class="col-sm-6 col-lg-4 border-right mb-4">
+                        <h6>ACCESSORIES & EQUIPMENT</h6>
+                        <a class="dropdown-item" href="#">FITNESS GEAR</a>
+                        <a class="dropdown-item" href="#">HIJABS</a>
+                        <a class="dropdown-item" href="#">BACKPACKS</a>
+                        <a class="dropdown-item" href="#">WATER BOTTLES</a>
+                        <a class="dropdown-item" href="#">CAPS & BEANIES</a>
+                        <a class="dropdown-item" href="#">MOVEMENT SUPPORT</a>
+                        <a class="dropdown-item" href="#">WRISTBANDS & HEADBANDS</a>
+                        <a class="dropdown-item" href="#">TRAINING GLOVES</a>
+                        <a class="dropdown-item" href="#">FOOTBALLS</a>
+                        <a class="dropdown-item" href="#">DUFFELS & OTHER BAGS</a>
+                      </div>
+  
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown megamenu-li dmenu">
+                  <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">Kids</a>
+                  <div class="dropdown-menu megamenu sm-menu border-top" aria-labelledby="dropdown01">
+                    <div class="row">
+                      <div class="col-sm-6 col-lg-4 border-right mb-4">
+                        <h6>SHOES</h6>
+                        <a class="dropdown-item" href="#">FOOTBALL & SOCCER</a>
+                        <a class="dropdown-item" href="#">TODDLER</a>
+                        <a class="dropdown-item" href="#">BIG KIDS & GRADE SCHOOL(4Y-7Y & 3-7)</a>
+                        <a class="dropdown-item" href="#">LITTLE KIDS & PRE SCHOOL(11C-3Y & 11K-2)</a>
+                        <a class="dropdown-item" href="#">SANDALS & SLIDES & THONGS</a>
+                        <a class="dropdown-item" href="#">CRICKET</a>
+  
+                      </div>
+                      <div class="col-sm-6 col-lg-4 border-right mb-4">
+                        <h6>CLOTHING</h6>
+                        <a class="dropdown-item" href="#">TOP & T-SHIRTS</a>
+                        <a class="dropdown-item" href="#">TRACK SUITS</a>
+                        <a class="dropdown-item" href="#">SHORTS</a>
+                        <a class="dropdown-item" href="#">HOODIES & SWEATSHIRTS</a>
+                        <a class="dropdown-item" href="#">PANTS & TIGHTS</a>
+                        <a class="dropdown-item" href="#">JACKETS & VESTS</a>
+                        <a class="dropdown-item" href="#">JERSEYS</a>
+                        <a class="dropdown-item" href="#">LONG SLEVEES TOPS</a>
+                        <a class="dropdown-item" href="#">SOCKS</a>
+  
+                      </div>
+                      <div class="col-sm-6 col-lg-4 border-right mb-4">
+                        <h6>ACCESSORIES & EQUIPMENT</h6>
+                        <a class="dropdown-item" href="#">CAPS & BEANIES</a>
+                        <a class="dropdown-item" href="#">BACKPACKS</a>
+                        <a class="dropdown-item" href="#">FOOTBALLS</a>
+                        <a class="dropdown-item" href="#">BASKETBALLS</a>
+                        <a class="dropdown-item" href="#">WATER BOTTLES</a>
+                        <a class="dropdown-item" href="#">DUFFEL & OTHER BAGS</a>
+  
+                      </div>
+  
+                    </div>
+                  </div>
+                </li>
+  
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#"> <i class="far fa-heart mr-1"></i><small
+                      class="text-gray"> (0)</small></a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/login.html"></i>Login</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="./pages/signup.html"></i>Sign Up</a>
+                </li>
+              </ul>
             </div>
+          </nav>
+        </div>
+      </header>
+
+    <div class="container-fluid login-screen-sec py-5">
+        <div class="container">
+
+            <div class="login-form">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="img-box p-3">
+                            <img class="img-fluid" src="../img/login-pic.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 align-item-center">
+                        <form class="validate-form p-5">
+                            <span class="login100-form-title p-b-43">
+                                Login to continue
+                            </span>
+
+
+                            <div class="wrap-input100 validate-input"
+                                data-validate="Valid email is required: ex@abc.xyz">
+                                <input class="input100" type="text" name="email">
+                                <span class="focus-input100"></span>
+                                <span class="label-input100">Email</span>
+                            </div>
+
+
+                            <div class="wrap-input100 validate-input" data-validate="Password is required">
+                                <input class="input100" type="password" name="pass">
+                                <span class="focus-input100"></span>
+                                <span class="label-input100">Password</span>
+                            </div>
+
+                            <div class="flex-sb-m w-full p-t-3 p-b-32">
+                                <div class="contact100-form-checkbox">
+                                    <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+                                    <label class="label-checkbox100" for="ckb1">
+                                        Remember me
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <a href="#" class="txt1">
+                                        Forgot Password?
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="container-login100-form-btn">
+                                <button class="login100-form-btn">
+                                    Login
+                                </button>
+                            </div>
+
+                            <div class="text-center p-t-46 p-b-20">
+                                <span class="txt2">
+                                    or sign up using
+                                </span>
+                            </div>
+
+                            <div class="login100-form-social flex-c-m">
+                                <a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
+                                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                </a>
+
+                                <a href="#" class="login100-form-social-item flex-c-m bg2 m-r-5">
+                                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
+
+    <footer class="bg-dark text-white">
+        <div class="container py-4">
+          <div class="row py-5">
+            <div class="col-md-3 mb-3 mb-md-0">
+              <div class="footer-logo">
+                <span><img class="img-fluid logo" src="./img/logo.png" alt=""> Sport Store</span>
+              </div>
+              <ul class="list-unstyled mb-0">
+                <li><a class="footer-link" href="#"><i class="fas fa-phone"></i> : 0300-1234567</a></li>
+                <li><a class="footer-link" href="#"><i class="far fa-envelope"></i> : abc@gmail.com</a></li>
+              </ul>
+              <ul class="d-flex flex-row social-link pl-0">
+                <li class="mr-2"><i class="fab fa-facebook-f"></i></li>
+                <li class="mr-2"><i class="fab fa-instagram"></i></li>
+                <li class="mr-1"><i class="fab fa-telegram-plane"></i></li>
+              </ul>
+            </div>
+            <div class="col-md-3 mb-3 mb-md-0">
+              <h6 class="text-uppercase mb-3">Information</h6>
+              <ul class="list-unstyled mb-0">
+                <li><a class="footer-link" href="#">About Us</a></li>
+                <li><a class="footer-link" href="#">Contact Us</a></li>
+                <li><a class="footer-link" href="#">Returns &amp; Refunds</a></li>
+                <li><a class="footer-link" href="#">Shop</a></li>
+                <li><a class="footer-link" href="#">Terms &amp; Conditions</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 mb-3 mb-md-0">
+              <h6 class="text-uppercase mb-3">Categories</h6>
+              <ul class="list-unstyled mb-0">
+                <li><a class="footer-link" href="#">Men</a></li>
+                <li><a class="footer-link" href="#">Womens</a></li>
+                <li><a class="footer-link" href="#">Kids</a></li>
+                <li><a class="footer-link" href="#">Apparels</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <div class="footer-widget ">
+                <h6 class="text-uppercase">Newsletter</h6>
+                <div class="footer-widget-content">
+                  <form action="#" method="post">
+                    <div class="form-group">
+                      <label for="subscriptionInput">Sign up Today to Stay Connected!</label>
+                      <input type="email" name="EMAIL" id="subscriptionInput" class="form-control my-2 required email"
+                        aria-describedby="subscriptionInput" autocomplete="on">
+  
+                      <input type="submit" value="Subscribe" name="Subscribe"
+                        class="btn btn-success btn-lg btn-block my-2">
+                    </div>
+                  </form>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+          <div class="border-top pt-4 text-center" style="border-color: #1d1d1d !important">
+            <div class="row">
+              <div class="col-lg-12">
+                <p class="small text-muted mb-0">&copy; 2021 All rights reserved.</p>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </footer>
 </body>
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../js/app.js"></script>
+
 </html>

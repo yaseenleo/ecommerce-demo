@@ -1,3 +1,11 @@
+.header{
+   background-color: var(--secondaryColor) !important;
+}
+
+.header .navbar .navbar-brand{
+   margin-top: -20px;
+}
+
 /* your styles go here */
 .megamenu-li {
     position: static;
@@ -60,9 +68,79 @@
 }
 /* contact banner */
 .contact-banner-sec{
-   background-color: var(--secondaryColor);
-   /* height: 20em; */
+   background-image: url("../img/banner/hero-contact-us.jpg");
+   height: 25em;
+    width: 100%;
+    background-size: cover;
 }
+.contact-banner-sec .content-box{
+   color: var(--secondaryColor);
+}
+
+
+.contact {
+   font-family: "Montserrat", sans-serif;
+   color: #8d97ad;
+   font-weight: 300;
+}
+
+.contact h1,
+.contact h2,
+.contact h3,
+.contact h4,
+.contact h5,
+.contact h6 {
+   color: #3e4555;
+}
+
+.contact .font-weight-medium {
+   font-weight: 500;
+}
+
+.contact .form-control {
+   background: transparent;
+   border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.contact .form-control:focus {
+   border-color: #ffffff;
+}
+
+.contact input::-webkit-input-placeholder,
+.contact textarea::-webkit-input-placeholder {
+   color: rgba(255, 255, 255, 0.7);
+}
+
+.contact input:-ms-input-placeholder,
+.contact textarea:-ms-input-placeholder {
+   color: rgba(255, 255, 255, 0.7);
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+   color: rgba(255, 255, 255, 0.7);
+}
+
+.contact .right-image {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   top: 0;
+   display: block;
+   margin: 0px auto;
+   height: 100%;
+   overflow: hidden;
+}
+
+.contact.bg-info {
+   background-color: #188ef4 !important;
+}
+
+.contact .text-inverse {
+   color: #3e4555 !important;
+}
+
+
 .product-card {
    position: relative;
    box-shadow: 0 2px 7px #dfdfdf;
@@ -170,4 +248,37 @@
    border: 1px solid lightgray;
    border-radius: 6px;
    margin-bottom: 2em;
+}
+
+/* login */
+.login-screen-sec{
+   background-color: var(--primaryColor);
+}
+.login-form{
+   border-radius: 16px;
+   background-color: var(--secondaryColor);
+   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+   backdrop-filter: blur( 2.0px );
+   -webkit-backdrop-filter: blur( 2.0px );
+   border-radius: 10px;
+   border: 1px solid rgba( 255, 255, 255, 0.56 );
+}
+.login-form .img-box img{
+   height: 600px;
+   object-fit: cover;
+   width: 100%;
+   object-position: bottom center;
+}
+/* sign up */
+.signup-screen-sec{
+   background-image: url("../img/shoe-cover.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+}
+.signup-screen-sec .input100:focus + .focus-input100{
+   background-color: #44535f4a;
+}
+.signup-screen-sec input.input100{
+   background-color: #44535f4a;
 }

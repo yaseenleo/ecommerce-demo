@@ -6,38 +6,180 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
       <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.default.css" id="theme-stylesheet">
-    <!-- <link rel="stylesheet" href="css/style.violet.css" id="theme-stylesheet"> -->
-    <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="../css/custom.css">
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="../img/favicon.png">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+  <!-- Lightbox-->
+  <link rel="stylesheet" href="../vendor/lightbox2/css/lightbox.min.css">
+  <!-- Range slider-->
+  <link rel="stylesheet" href="../vendor/nouislider/nouislider.min.css">
+  <!-- Bootstrap select-->
+  <link rel="stylesheet" href="../vendor/bootstrap-select/css/bootstrap-select.min.css">
+  <!-- Owl Carousel-->
+  <link rel="stylesheet" href="../vendor/owl.carousel2/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="../vendor/owl.carousel2/assets/owl.theme.default.css">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="../css/style.default.css" id="theme-stylesheet">
+  <!-- <link rel="stylesheet" href="css/style.violet.css" id="theme-stylesheet"> -->
+  <!-- Custom stylesheet - for your changes-->
+  <link rel="stylesheet" href="../css/custom.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="../img/favicon.png">
+
 </head>
 <body>
-    <div class="container-fluid contact-banner-sec">
-        <div class="container">
-            <div class="contact-banner">
-                <div class="row">
-                    <div class="col-md-6 align-self-center">
+    <section class="container-fluid contact-banner-sec">
+        <div class="container h-100">
+            <div class="contact-banner text-center h-100">
+                <div class="row h-100">
+                    <div class="col-md-12 align-self-center">
                         <div class="content-box">
                             <h1>Contact Us</h1>
                             <p>Let us know what is in your mind</p>
                             <button class="btn btn-primary btn-rounded">Contact Us</button>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="img-box">
-                            <img class="img-fluid" src="../img/banner/contact.png" alt="">
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid p-0">
+        <div class="bg-info contact overflow-hiddedn position-relative">
+            
+            <div class="row no-gutters">
+           
+                    <div class="col-lg-6 contact-box mb-4 mb-md-0 px-5">
+                        <div class="py-5">
+                            <h1 class="title font-weight-light text-white mt-2">Your Inquires</h1>
+                            <form class="mt-3">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group mt-2">
+                                            <input class="form-control text-white" type="text" placeholder="name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group mt-2">
+                                            <input class="form-control text-white" type="email"
+                                                placeholder="email address">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group mt-2">
+                                            <textarea class="form-control text-white" rows="3"
+                                                placeholder="message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 d-flex align-items-center mt-2">
+                                        <button onclick="emailSubmit()" type="button" class="btn bg-white text-inverse px-3 py-2"><span>
+                                                Submit</span></button>
+                                        <span class="ml-auto text-white align-self-center">
+                                            <i class="fas fa-phone-alt mr-2"></i> (021)34825888-9</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+              
+                <div class="col-lg-6 right-image pr-0">
+                    <iframe
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Block%2010%20Gulshan-e-Iqbal%20Karachi%20Pakistan.+(Dua%20house)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                        width="100%" height="538" frameborder="0" style="border:0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen data-aos="fade-left"
+                        data-aos-duration="3000"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white">
+        <div class="container py-4">
+          <div class="row py-5">
+            <div class="col-md-3 mb-3 mb-md-0">
+              <div class="footer-logo">
+                <span><img class="img-fluid logo" src="./img/logo.png" alt=""> Sport Store</span>
+              </div>
+              <ul class="list-unstyled mb-0">
+                <li><a class="footer-link" href="#"><i class="fas fa-phone"></i> : 0300-1234567</a></li>
+                <li><a class="footer-link" href="#"><i class="far fa-envelope"></i> : abc@gmail.com</a></li>
+              </ul>
+              <ul class="d-flex flex-row social-link pl-0">
+                <li class="mr-2"><i class="fab fa-facebook-f"></i></li>
+                <li class="mr-2"><i class="fab fa-instagram"></i></li>
+                <li class="mr-1"><i class="fab fa-telegram-plane"></i></li>
+              </ul>
+            </div>
+            <div class="col-md-3 mb-3 mb-md-0">
+              <h6 class="text-uppercase mb-3">Information</h6>
+              <ul class="list-unstyled mb-0">
+                <li><a class="footer-link" href="#">About Us</a></li>
+                <li><a class="footer-link" href="#">Contact Us</a></li>
+                <li><a class="footer-link" href="#">Returns &amp; Refunds</a></li>
+                <li><a class="footer-link" href="#">Shop</a></li>
+                <li><a class="footer-link" href="#">Terms &amp; Conditions</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 mb-3 mb-md-0">
+              <h6 class="text-uppercase mb-3">Categories</h6>
+              <ul class="list-unstyled mb-0">
+                <li><a class="footer-link" href="#">Men</a></li>
+                <li><a class="footer-link" href="#">Womens</a></li>
+                <li><a class="footer-link" href="#">Kids</a></li>
+                <li><a class="footer-link" href="#">Apparels</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <div class="footer-widget ">
+                <h6 class="text-uppercase">Newsletter</h6>
+                <div class="footer-widget-content">
+                  <form action="#" method="post">
+                    <div class="form-group">
+                      <label for="subscriptionInput">Sign up Today to Stay Connected!</label>
+                      <input type="email" name="EMAIL" id="subscriptionInput" class="form-control my-2 required email"
+                        aria-describedby="subscriptionInput" autocomplete="on">
+  
+                      <input type="submit" value="Subscribe" name="Subscribe"
+                        class="btn btn-success btn-lg btn-block my-2">
+                    </div>
+                  </form>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+          <div class="border-top pt-4 text-center" style="border-color: #1d1d1d !important">
+            <div class="row">
+              <div class="col-lg-12">
+                <p class="small text-muted mb-0">&copy; 2021 All rights reserved.</p>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </footer>
 </body>
+
 <script src="../vendor/jquery/jquery.min.js"></script>
 <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../vendor/lightbox2/js/lightbox.min.js"></script>
+<script src="../vendor/nouislider/nouislider.min.js"></script>
+<script src="../vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script src="../vendor/owl.carousel2/owl.carousel.min.js"></script>
+<script src="../vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.min.js"></script>
 <script src="../js/front.js"></script>
 <script src="../js/app.js"></script>
 </html>
