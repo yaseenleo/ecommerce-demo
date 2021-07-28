@@ -66,6 +66,33 @@
    height: 230px;
    object-fit: cover;
 }
+
+.category-box .category-item{
+   height: 33em;
+}
+
+.services-sec{
+   background-color: var(--secondaryColor);
+}
+
+.services-sec .service-card{
+   border-radius: 10px;
+   height: 100%;
+   text-align: center;
+}
+.services-sec .service-card .card-header{
+   background-color: transparent;
+   padding: 0;
+   border-bottom: none;
+   height: 7em;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.services-sec .service-card .card-body{
+   text-align: center !important;
+   padding-top: 0;
+}
 /* contact banner */
 .contact-banner-sec{
    background-image: url("../img/banner/hero-contact-us.jpg");
@@ -282,3 +309,176 @@
 .signup-screen-sec input.input100{
    background-color: #44535f4a;
 }
+
+ .hero-text h2 {
+   margin-bottom: 50px;
+ }
+ 
+ .hero-text .hero {
+   position: relative;
+ }
+ 
+ .hero-text .hero .hero-slide a:hover span {
+   color: #033a71;
+ }
+ 
+ .hero .hero-slide img {
+   width: 100%;
+   height: 550px;
+   object-fit: cover;
+   object-position: top center;
+ }
+ 
+ .hero .hero-slide .header-content {
+   top: 20%;
+   margin-left: 8rem;
+   max-width: 550px;
+   width: 100%;
+   padding: 2rem;
+ }
+ 
+ .slide-content {
+   padding: 10px 20px 10px 0;
+ }
+ 
+ .slide-content .h1 {
+   font-size: 62px;
+ }
+ 
+
+ /** Text Animation **/
+ 
+ @-webkit-keyframes fadeInUpSD {
+   0% {
+     opacity: 0;
+     -webkit-transform: translateY(100px);
+     transform: translateY(100px);
+   }
+ 
+   100% {
+     opacity: 1;
+     -webkit-transform: none;
+     transform: none;
+   }
+ }
+ 
+ @keyframes fadeInUpSD {
+   0% {
+     opacity: 0;
+     -webkit-transform: translateY(100px);
+     transform: translateY(100px);
+   }
+ 
+   100% {
+     opacity: 1;
+     -webkit-transform: none;
+     transform: none;
+   }
+ }
+ 
+ .fadeInUpSD {
+   -webkit-animation-name: fadeInUpSD;
+   animation-name: fadeInUpSD;
+ }
+ 
+ .slick-active .slide-content {
+   animation-name: fadeInUpSD;
+   animation-duration: 1s;
+   opacity: 1;
+   width: 100%;
+   padding: 10px 20px 30px 0;
+ }
+ 
+ /* Text Animation End **/
+ 
+ .slick-dots {
+   position: absolute;
+   bottom: 10px;
+   display: block;
+   width: 100%;
+   padding: 0;
+   list-style: none;
+   text-align: center;
+ }
+ 
+ .slick-dots li {
+   position: relative;
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   margin: 0 5px;
+   padding: 0;
+   cursor: pointer;
+ }
+ 
+ .slick-active button {
+   background: #d60e96;
+ }
+ 
+ .slick-dots li button {
+   font-size: 0;
+   line-height: 0;
+   display: block;
+   width: 20px;
+   height: 20px;
+   padding: 5px;
+   cursor: pointer;
+   border-radius: 50%;
+   border: 0;
+   outline: none;
+ }
+ 
+ .slick-dots li button::before {
+   font-size: 18px;
+   color: #fff;
+   opacity: 1;
+ }
+
+ .trending-product-slider .product{
+    margin: 0 0.4em;
+ }
+
+ .trending-product-slider .logo-right>i {
+   position: absolute;
+   right: -36px;
+   top: 50%;
+   font-size: 2em;
+   color: black;
+   -webkit-transform: translate(0, -50%);
+   -ms-transform: translate(0, -50%);
+   transform: translate(0, -50%);
+   cursor: pointer;
+}
+
+.trending-product-slider .logo-left>i {
+   position: absolute;
+   left: -36px;
+   top: 50%;
+   font-size: 2em;
+   color: black;
+   -webkit-transform: translate(0, -50%);
+   -ms-transform: translate(0, -50%);
+   transform: translate(0, -50%);
+   cursor: pointer;
+}
+ 
+ 
+ /* Media Queries */
+ 
+ @media (max-width: 768px) {
+   .hero-text .hero .hero-slide a {
+     padding-top: 0.8rem;
+   }
+ 
+   .hero-text .hero .hero-slide a span {
+     font-size: 20px;
+     margin-top: 0.5rem;
+   }
+ 
+   .hero .hero-slide .header-content {
+     left: 50%;
+     -webkit-transform: translateX(-50%);
+     transform: translateX(-50%);
+     margin: 0 auto;
+   }
+ }
