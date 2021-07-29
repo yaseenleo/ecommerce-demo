@@ -22,6 +22,9 @@ body {
 .text-gray {
   color: #aaa !important;
 }
+.secondary-bg{
+  background-color: var(--secondaryColor);
+}
 
 strong {
   font-weight: 700;
