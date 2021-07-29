@@ -71,6 +71,11 @@
    height: 33em;
 }
 
+.catalog-sec .img-box img{
+   width: 100%;
+   
+}
+
 .services-sec{
    background-color: var(--secondaryColor);
 }
