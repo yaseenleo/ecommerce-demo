@@ -487,3 +487,12 @@
      margin: 0 auto;
    }
  }
+
+ @media (max-width: 534px){
+   .hero .hero-slide .header-content {
+      left: 0%;
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+      margin: 0 auto;
+  }
+ }
